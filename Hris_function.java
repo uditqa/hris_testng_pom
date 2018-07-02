@@ -17,8 +17,8 @@ public class Hris_function {
   // }
    public void logInWithValidCredentials() {
 	  
-		 driver.findElement(By.id("txtUserName")).sendKeys("uditsharma"); 
-		 driver.findElement(By.id("txtPassword")).sendKeys("Udit@321#");
+		 driver.findElement(By.id("txtUserName")).sendKeys("");//Provide correct credentials 
+		 driver.findElement(By.id("txtPassword")).sendKeys("");//Provide correct credentials
 		 driver.findElement(By.xpath("//input[@name='Submit']")).click();
    }
 
