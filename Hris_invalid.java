@@ -14,8 +14,8 @@ public class Hris_invalid {
 		this.driver=driver;
 	}
 	public void loginWithInvalidCredentials() {
-		 driver.findElement(By.id("txtUserName")).sendKeys("uditsharma");
-		 driver.findElement(By.id("txtPassword")).sendKeys("Udit321#");
+		 driver.findElement(By.id("txtUserName")).sendKeys("");//Provide incorrect credentials
+		 driver.findElement(By.id("txtPassword")).sendKeys("");//Provide incorrect credentials
 		 driver.findElement(By.xpath("//input[@name='Submit']")).click();
 		 String str=driver.findElement(By.xpath("//div[@class='']")).getText();
 		 System.out.println(str);
